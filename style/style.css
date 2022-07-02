@@ -1,0 +1,168 @@
+body{
+    position: relative;
+    background-color: #ff763b;
+    font-family: 'Stalinist One', cursive;
+    min-height: 100vh;
+}
+.logoAlura{
+    position: absolute;
+    margin: 20px 50px;
+}
+.nombreJuego{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-transform: uppercase;
+    top: 260px;
+    width: 100%;
+    font-size: 30px;
+    text-shadow: 10px 2px 2px #2f2d2c93;
+    animation-name: dearribaAbajo;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.principal{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.button{
+    padding: 20px 70px;
+    margin: 0 30px;
+    border-radius: 8px;
+    border: none;
+    background: #ffaa62;
+    font-size: 1.3em;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.button:hover{
+    background: #ffab62cc;
+    transform: scale(1.1);
+    transition: 80ms;
+}
+.button a{
+    text-decoration: none;
+    color: #ff763b;
+}
+.conteinerFooter{
+    position: absolute;
+    bottom: 0;
+    background: #2f2d2c;
+    padding: 3px;
+    color: #ff763b;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+}
+/* PAGINA DEL JUEGO */
+
+#juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.textoMostrado{
+    position: absolute;
+    letter-spacing: 1px;
+    top: 100px;
+    line-height: 2em;
+    width: 100%;
+    text-align: center;
+}
+.cajacentral{
+    position: relative;
+    width: 940px;
+    height: 700px;
+    text-align: center;
+}
+.cajabotones{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.letra{
+    display: inline-block;
+    background: #ff763b;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px;
+    border-bottom: 4px solid white;
+    outline: none;
+    text-transform: uppercase;
+}
+.letraE{
+    display: inline-block;
+    background: #ff763b;
+    font-size: 1.6em;
+    margin: 0 10px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px;
+    text-transform: uppercase;
+}
+
+/* ESTILO AGREGAR PALABRA */
+#agregar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+}
+.conteiner-textarea h1{
+    margin: 0 0 20px 0;
+}
+.textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    overflow: auto;
+    font-size: 30px;
+    background: #ffaa62;
+    text-transform: uppercase;   
+    letter-spacing: 5px;
+    border-radius: 5px;
+    padding: 1em;
+}
+.textarea::placeholder{
+    border: none;
+}
+.container-info{
+    display: flex;
+}
+.container-info img{
+    margin: 0 10px;
+}
+.container-button{
+    margin: 30px 0;
+}
+
+/* OCULTAR */
+.ocultarMain{
+    display: none;
+}
+.mostrarMain{
+    display: block;
+}
+
+/* ANIMACIONES */
+
+@keyframes dearribaAbajo{
+    from{
+        top: 260px;
+    }
+    to{
+        top: 190px;
+    }
+}
